@@ -27,4 +27,26 @@ brew services start postgresql
 # check the version.
 psql --version
 
+# You can access the window from cmd mode.
+1. copy this path 
+C:\Program Files\PostgreSQL\15\bin
+2. Add it to the PAth:
+   .Press win + s -Search "Environment Variables"
+   .Click "Edit the sytem enviroment variable"
+   .in Sytem Properties, click Environment Variale
+   .in system variable, find and select the path -click edit
+   .click new and past:
+   C:\Program Files\PostgreSQL\15\bin
+.Click OK to close all dialogs.
+3. Reopen commad promt and test:
+ psql --version
 
+.You should see somting like:
+psql (PostgreSQL) 15.x
+
+# For SQL connection write a command
+ sql -U postgres
+ .Give your password (you are setting psswod during installation) 
+ Password for user postgres:
+.After you shoud see like:
+postgres=# 
